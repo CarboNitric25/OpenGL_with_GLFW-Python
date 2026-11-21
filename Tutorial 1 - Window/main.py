@@ -9,6 +9,12 @@ def main():
     if not glfw.init(): #Initializes the GLFW library. If any errors it throws a runtime error
         raise RuntimeError("Failed to initialize GLFW library.")
 
+    #Sets some of the properties of window before creating it
+    glfw.window_hint(glfw.RESIZABLE, glfw.FALSE)
+    glfw.window_hint(glfw.CONTEXT_VERSION_MAJOR, 3)
+    glfw.window_hint(glfw.CONTEXT_VERSION_MINOR, 3)
+    glfw.window_hint(glfw.OPENGL_PROFILE, glfw.OPENGL_CORE_PROFILE)
+    
     #Creates the window where all graphics processing will be done.
     window1 = glfw.create_window(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE, None, None)
     if not window1: # If theres an error initializing the window it throws a runtime error
