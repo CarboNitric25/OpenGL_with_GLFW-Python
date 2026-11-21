@@ -1,0 +1,5 @@
+import numpy
+
+WINDOW_WIDTH = 640
+WINDOW_HEIGHT = 480
+WINDOW_TITLE = "OpenGL with GLFW"
