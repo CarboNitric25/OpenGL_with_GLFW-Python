@@ -1,4 +1,4 @@
-
+#Essential imports needed for the project
 import glfw
 from OpenGL.GL import *
 from OpenGL.GLU import *
@@ -28,6 +28,10 @@ def main():
 
     # Main loop of the window we created. It prevents from the window closing until close button is pressed.
     while not glfw.window_should_close(window1):
+        #Clears the background color to the color specified
+        glClearColor(0.1, 0.1, 0.1, 1.0)
+        glClear(GL_COLOR_BUFFER_BIT)
+        
         glfw.swap_buffers(window1) #Swap backbuffer (which rendering is done) to front buffer (which you can see the final graphic).
         glfw.poll_events() #Processes events (such as mouse click) until close button is pressed.
 
