@@ -101,7 +101,7 @@ def main():
         glBindVertexArray(vao1)
 
         #Drawing / rendering function
-        glDrawArrays(GL_TRIANGLES, 0, GL_UNSIGNED_INT, INDICES1)
+        glDrawElements(GL_TRIANGLES, 0, GL_UNSIGNED_INT, INDICES1)
 
         glfw.swap_buffers(window1) #Swap backbuffer (which rendering is done) to front buffer (which you can see the final graphic).
         glfw.poll_events() #Processes events (such as mouse click) until close button is pressed.
