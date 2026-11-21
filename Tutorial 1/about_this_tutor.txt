@@ -1,4 +1,0 @@
-
-The first part of this tutorial series is about initializing GLFW and OpenGL libraries with Python.
-Once these libraries are initialized we will be able to create the window and make it enter to the main loop. 
-I hope you enjoy and learn something from this tutorial.
