@@ -85,6 +85,7 @@ def main():
 
     #Initializes the EBO object that store the indices
     ebo1 = glGenBuffers(1)
+    #Binding the EBO objects and defining its data
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo1)
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, INDICES1.nbytes, INDICES1, GL_STATIC_DRAW)
 
